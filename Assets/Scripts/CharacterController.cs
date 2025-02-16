@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-// made a simple change to demonstrate how git works.
+
 public class CharacterController : MonoBehaviour
 {
     public float speed = 0f;

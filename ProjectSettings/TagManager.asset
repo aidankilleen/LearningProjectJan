@@ -9,6 +9,7 @@ TagManager:
   - Trigger
   - InventoryItem
   - Gate
+  - Exit
   layers:
   - Default
   - TransparentFX

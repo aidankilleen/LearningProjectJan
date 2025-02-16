@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -68,6 +69,11 @@ public class CharacterController : MonoBehaviour
             inventoryManager.items.Add(new Item { name = other.name });
 
             other.gameObject.SetActive(false);
+        } else if (other.gameObject.CompareTag("Exit"))
+        {
+            Debug.Log("you hit the exit");
+
+            SceneManager.LoadScene("Level2");
         }
     }
 
